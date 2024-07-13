@@ -1,0 +1,143 @@
+//TASK:-1 Declare a variable using var, assign it a number and log the value in to console.
+var myNumber = 42;
+console.log(myNumber);
+
+//TASK:-2 Declare a variable using let, assign it a string and log the value in to console.
+let myString = "Hello, world!";
+console.log(myString);
+
+// typeof  
+var myNumber = 42;
+console.log(typeof myNumber); // Output: "number"
+
+//For the variable declared with let and assigned a string:
+let myString = "Hello, world!";
+console.log(typeof myString); // Output: "string"
+
+//TASK:-3 Declare a variable using const, assign it a Boolean and log the value in to console. And tell the typeof 
+
+const myBoolean = true;
+console.log(myBoolean); // Output: true
+console.log(typeof myBoolean); // Output: "boolean"
+
+//TASK:-4 Declare a variable using const, assign it a Boolean and log the value in to console. And type of 
+
+const myBoolean = true;
+console.log(myBoolean); // Output: true
+console.log(typeof myBoolean); // Output: "boolean"
+
+//Another method 
+const myBoolean = false;
+console.log(myBoolean.toString()); // Output: "false"
+console.log(Object.prototype.toString.call(myBoolean)); // Output: "[object Boolean]"
+
+Task 4: Create variables of different data types (number, string, boolean, object, array) and log each variable's type using the typeof operator. And explain all of the above 
+
+// Number
+const myNumber = 42;
+console.log(typeof myNumber); // Output: "number"
+
+// String
+const myString = "Hello, world!";
+console.log(typeof myString); // Output: "string"
+
+// Boolean
+const myBoolean = true;
+console.log(typeof myBoolean); // Output: "boolean"
+
+// Object
+const myObject = { key: "value" };
+console.log(typeof myObject); // Output: "object"
+
+// Array
+const myArray = [1, 2, 3];
+console.log(typeof myArray); // Output: "object" (arrays are considered objects in JavaScript)
+/*------------------------------------------------------------------------------------------------------Explanation----------------------------------------------------------------------------------------
+Number:
+
+Declaration: const myNumber = 42;
+typeof myNumber returns "number".
+Numbers in JavaScript include both integers and floating-point numbers.
+String:
+
+Declaration: const myString = "Hello, world!";
+typeof myString returns "string".
+Strings are sequences of characters used to represent text.
+Boolean:
+
+Declaration: const myBoolean = true;
+typeof myBoolean returns "boolean".
+Booleans represent logical values: true or false.
+Object:
+
+Declaration: const myObject = { key: "value" };
+typeof myObject returns "object".
+Objects are collections of key-value pairs and are used to store structured data.
+Array:
+
+Declaration: const myArray = [1, 2, 3];
+typeof myArray returns "object".
+Arrays are special types of objects that are used to store ordered collections of values. Note that typeof treats arrays as objects because, in JavaScript, arrays are a type of object.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+//Task 5: Declare a variable using let, assign it an initial value, reassign a new value, and log both values to the console.and explain 
+
+let myVariable = 10;
+console.log(myVariable); // Output: 10
+
+// Reassign the variable to a new value
+myVariable = 20;
+console.log(myVariable); // Output: 20
+/*-----------------------------------------------------------------------Explanation---------------------------------------------------------------------------------------------------------------------
+Declaration and Initial Assignment:
+
+let myVariable = 10;
+This statement declares a variable named myVariable using the let keyword and assigns it an initial value of 10.
+let allows the variable to be reassigned later.
+Logging Initial Value:
+
+console.log(myVariable); // Output: 10
+This logs the initial value of myVariable to the console, which is 10.
+Reassignment:
+
+myVariable = 20;
+This statement reassigns the value of myVariable to 20.
+With let, you can change the value of the variable after its initial declaration.
+Logging New Value:
+
+console.log(myVariable); // Output: 20
+This logs the new value of myVariable to the console, which is now 20.
+Using let is useful when you need a variable that may change its value over time within the same scope. Unlike const, which disallows reassignment, let provides flexibility for mutable values.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+//Task 6: Try reassigning a variable declared with const and observe the error.
+
+// Declare a variable using const and assign it an initial value
+const myConstant = 30;
+console.log(myConstant); // Output: 30
+
+// Attempt to reassign the variable to a new value
+myConstant = 40; // This will cause an error
+console.log(myConstant);
+When you run this code, you will see an error like the following in the console:
+
+/*
+Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:6:11*/
+//Explanation Declaration and Initial Assignment:
+
+const myConstant = 30;
+This statement declares a variable named myConstant using the const keyword and assigns it an initial value of 30.
+const is used to declare variables that should not be reassigned after their initial assignment.
+Logging Initial Value:
+
+console.log(myConstant); // Output: 30
+This logs the initial value of myConstant to the console, which is 30.
+Attempt to Reassign:
+
+myConstant = 40;
+This statement attempts to reassign the value of myConstant to 40.
+Because myConstant was declared with const, this reassignment is not allowed.
+Error Observation:
+
+The JavaScript runtime throws a TypeError with the message Assignment to constant variable.
+This error indicates that you cannot reassign a value to a variable declared with const.
+Using const ensures that the variable's value remains constant throughout its scope, providing a guarantee that it won't be accidentally changed.
