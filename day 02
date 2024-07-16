@@ -1,0 +1,151 @@
+Activity 1: 
+Task 1:- Write a program to add two number and log the result to console.
+  Using + Operator
+let num1 = 5;
+let num2 = 5;
+let sum = num1+num2;
+console.log("sum :",sum);
+
+Using function :- In this approach, we are adding two numbers using a function in JavaScript involves defining a custom function that takes two parameters, adds them, and returns the result.
+  function additionFunction(a, b) {
+    return a + b;
+}
+    let num1 = 5;
+    let num2 = 10;
+    let sum = additionFunction(num1, num2);
+    console.log("Sum of given numbers is :", sum);
+
+Using Arrow function:- Adding two numbers using an arrow function in JavaScript involves creating a concise function syntax that adds parameters and returns the sum.
+  let addition = (a, b) => a + b;
+  let num1 = 25;
+  let num2 = 25;
+  let sum = addition(num1, num2);
+  console.log("Sum of given numbers is :", sum);
+
+Using Addition Assignment (+=) Operator:- In this approach we use Addition Assignment (+=) operator in which operator Sums up left and right operand values and then assigns the result to the left operand.
+  let num1 = 15;
+  let num2 = 10;
+  // Equivalent to num1 = num1 + num2
+  num1 += num2;
+  console.log("Sum of the given number is :", num1);
+
+Task 2:- Write a program to sub two number and log the result to console.
+Using the Negative Operator ( – ) in Console:- We can directly perform Subtraction operations in the console by using the “console.log()” statement by providing two operands that will print the exact difference value.
+  let a = 10; 
+  let b = 20; 
+// Subtract directlty 
+console.log(a - b); // -10 
+console.log(b - a); // 10 
+
+// Subtract by using another variable 
+let c = b - a; 
+console.log(c); // 10 
+
+// Subtract without any variable 
+console.log(10 - 20); //-10 
+console.log(20 - 10); //10 
+console.log(20 - 10 - 10); //0
+
+
+Using User Defined Functions:-
+  let a = 10;
+  let b = 20; 
+  // Funciton to subtract two variables 
+function subtract(a, b) { 
+	return a - b; 
+} 
+// For printing the result 
+console.log("after subtraction : "	+ subtract(a, b));
+
+
+
+Using Arrow Function:-
+let a = 10; 
+let b = 20; 
+// Arrow funciton for subtraction of  two numbers 
+let ans = (a, b) => a - b; 
+// For printing the result in console 
+console.log("after subtraction : " + ans(a, b));
+
+
+
+Using the Subtract Assignment Operator:-
+let a = 20; 
+let b = 10; 
+
+a -= b; 
+console.log(a); // 10
+
+
+TASK 3:-  Write a program to multiplie two number and log the result to console.
+
+  Using “*” Operator:-In this approach we multiply two numbers in JavaScript involves using the * operator to perform arithmetic multiplication on numeric variables, resulting in their result.
+
+let a = 10;  
+let b = 10; 
+let result = a * b; 
+console.log("Result :", result); //100
+
+Using Functions
+Functions are the building blocks of some specific code that carry out specific tasks. Using the function, we can multiply two numbers by passing parameters, and the function will then return the result of the multiplication.
+
+let a = 10; 
+let b = 20; 
+  // Funciton for multiplication of two numbers 
+function multiply(a, b) { 
+    return a * b; 
+} 
+  // For printing the result 
+console.log("After multiplication : " + multiply(a, b));
+
+
+Using Arrow function
+In order to multiply two numbers, we create an arrow function, passing the values of the two numbers as parameters and returning the result of multiplication. We obtain the multiplied value by calling the arrow function and providing values for the parameter.
+
+
+let a = 10; 
+let b = 20; 
+  
+// Arrow funciton for multiplication of two numbers 
+let result = (a, b) => a * b; 
+// For printing the result in console 
+console.log("After multiplication : " + result(a, b));
+
+
+  Using Multiplication Assignment Operator
+   When multiplying a variable by a specific amount and returning the result to the variable, the multiplication assignment operator *= is a useful shorthand. In JavaScript, it is a compound assignment operator.
+
+let a = 20; 
+a *= 10; 
+  
+// Printing the result 
+console.log(a); // 10 
+  
+// Using another variable for mulitiplication 
+let b = 2; 
+a *= b; 
+// Printing the result 
+console.log(a); // 10
+Output
+200
+400
+
+  
+Using for Loop:- We can multiply two numbers by using for loop. A function must first be initialized before multiplication calculations can be made using a for loop.
+
+
+// Function for multiplication 
+function multiply(a, b) { 
+    let result = 0; 
+    for (let i = 1; i <= b; i++) { 
+        result += a; 
+    } 
+    return result; 
+} 
+  
+// Calling function and storing the returned value 
+let result = multiply(5, 10); // 50 
+  
+// Display the result 
+console.log(result);
+
