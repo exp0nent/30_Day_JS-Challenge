@@ -202,7 +202,7 @@ Integer division result: 4
 
 ACTIVITY 2:-
 
-Task 5:- Using Addition Assignment (+=) Operator:- In this approach we use Addition Assignment (+=) operator in which operator Sums up left and right operand values and then assigns the result to the left operand.
+Task 6:- Using Addition Assignment (+=) Operator:- In this approach we use Addition Assignment (+=) operator in which operator Sums up left and right operand values and then assigns the result to the left operand.
   let num1 = 15;
   let num2 = 10;
   // Equivalent to num1 = num1 + num2
@@ -210,7 +210,7 @@ Task 5:- Using Addition Assignment (+=) Operator:- In this approach we use Addit
   console.log("Sum of the given number is :", num1);
 
 
-Task 6:- Using the Subtract Assignment Operator:-
+Task 7:- Using the Subtract Assignment Operator:-
 let a = 20; 
 let b = 10; 
 
@@ -218,4 +218,118 @@ a -= b;
 console.log(a); // 10
 
 
+Activity :-3
+Task 8:- JavaScript that compares two numbers using the greater than (>) and less than (<) operators and logs the result to the console:
+// Declare and initialize two variables
+let number1 = 15;
+let number2 = 20;
 
+// Compare the numbers using > and < operators
+if (number1 > number2) {
+    console.log(number1 + " is greater than " + number2);
+} else if (number1 < number2) {
+    console.log(number1 + " is less than " + number2);
+} else {
+    console.log(number1 + " is equal to " + number2);
+}
+
+
+task 9:- JavaScript that compares two numbers using the greater than or equal to (>=) and less than or equal to (<=) operators and logs the result to the console:
+
+// Declare and initialize two variables
+let number1 = 15;
+let number2 = 20;
+
+// Compare the numbers using >= and <= operators
+if (number1 >= number2) {
+    if (number1 === number2) {
+        console.log(number1 + " is equal to " + number2);
+    } else {
+        console.log(number1 + " is greater than or equal to " + number2);
+    }
+} else {
+    console.log(number1 + " is less than or equal to " + number2);
+}
+
+
+
+Task 10:- JavaScript that compares two numbers using the equality (==) and strict equality (===) operators, logging the result to the console:
+// Declare and initialize two variables
+let number1 = 15;
+let number2 = '15';
+
+// Compare the numbers using == operator
+if (number1 == number2) {
+    console.log(number1 + " is equal to " + number2 + " using ==");
+} else {
+    console.log(number1 + " is not equal to " + number2 + " using ==");
+}
+
+// Compare the numbers using === operator
+if (number1 === number2) {
+    console.log(number1 + " is equal to " + number2 + " using ===");
+} else {
+    console.log(number1 + " is not equal to " + number2 + " using ===");
+}
+
+
+
+
+
+Activity 4:- LOgical operator
+Task :- 11,12 => write a program that uses the && (logical AND) and || (logical OR) operators to combine two conditions and log the result to the console:
+
+// Declare and initialize two variables
+let number1 = 10;
+let number2 = 20;
+
+// Use the && operator to combine two conditions
+if (number1 > 5 && number2 > 15) {
+    console.log("Both conditions are true (number1 > 5 && number2 > 15).");
+} else {
+    console.log("One or both conditions are false (number1 > 5 && number2 > 15).");
+}
+
+// Use the || operator to combine two conditions
+if (number1 < 5 || number2 > 15) {
+    console.log("At least one condition is true (number1 < 5 || number2 > 15).");
+} else {
+    console.log("Both conditions are false (number1 < 5 || number2 > 15).");
+}
+
+
+
+ task:- 13     that uses the ! (logical NOT) operator to negate a condition and log the result to the console:
+// Declare and initialize a variable
+let isRaining = true;
+
+// Use the ! operator to negate the condition
+if (!isRaining) {
+    console.log("It is not raining.");
+} else {
+    console.log("It is raining.");
+}
+
+// Another example with a number comparison
+let number = 10;
+
+// Check if the number is not greater than 5
+if (!(number > 5)) {
+    console.log("The number is not greater than 5.");
+} else {
+    console.log("The number is greater than 5.");
+}
+
+
+activity 5:- Ternary Operator 
+
+task 14:-  uses the ternary operator to check if a number is positive or negative and logs the result to the console:
+
+// Declare and initialize a variable with a number
+let number = -10;
+
+// Use the ternary operator to check if the number is positive or negative
+let result = (number >= 0) ? "The number is positive." : "The number is negative.";
+
+// Log the result to the console
+console.log(result);
