@@ -22,13 +22,6 @@ Using Arrow function:- Adding two numbers using an arrow function in JavaScript 
   let sum = addition(num1, num2);
   console.log("Sum of given numbers is :", sum);
 
-Using Addition Assignment (+=) Operator:- In this approach we use Addition Assignment (+=) operator in which operator Sums up left and right operand values and then assigns the result to the left operand.
-  let num1 = 15;
-  let num2 = 10;
-  // Equivalent to num1 = num1 + num2
-  num1 += num2;
-  console.log("Sum of the given number is :", num1);
-
 Task 2:- Write a program to sub two number and log the result to console.
 Using the Negative Operator ( – ) in Console:- We can directly perform Subtraction operations in the console by using the “console.log()” statement by providing two operands that will print the exact difference value.
   let a = 10; 
@@ -66,15 +59,6 @@ let b = 20;
 let ans = (a, b) => a - b; 
 // For printing the result in console 
 console.log("after subtraction : " + ans(a, b));
-
-
-
-Using the Subtract Assignment Operator:-
-let a = 20; 
-let b = 10; 
-
-a -= b; 
-console.log(a); // 10
 
 
 TASK 3:-  Write a program to multiplie two number and log the result to console.
@@ -148,4 +132,90 @@ let result = multiply(5, 10); // 50
   
 // Display the result 
 console.log(result);
+
+
+Task 4:-  Using Division / Operator
+In this approach we divide two numbers in JavaScript involves using the / operator to perform arithmetic division on numeric variables, resulting in their division.
+
+let a = 20;
+let b = 10; 
+
+// Divide directlty 
+console.log(a/b); // 2
+console.log(b/a); // 0.5
+
+// Divide by using another variable
+let c = a/b; 
+console.log(c); // 2
+
+// Divide without any variable
+console.log(20/10); // 2
+console.log(10/20); // 0.5
+
+Using Functions:- In this approach we are creating a custom function and passing parameters to them, dividing those parametres and returning the result.
+
+let x = 40;
+let y = 20;
+
+// Funciton for dividing the variable
+function divide(x, y) {
+  return x / y;
+}
+// For printing the result
+console.log("After division : " + divide(x, y));
+
+Using Arrow function:- We can make our custom Arrow function for division of numbers in which we can pass parameters and divide them accordingly and returns out the result of that division. It will work same as normal function but syntatically it differs from it.
+
+
+let x = 40 ;
+let y = 20 ; 
+
+// Arrow funciton for division
+let ans = (x,y) => x/y;
+
+// For printing the result in console
+console.log("After division : " +  ans(x,y));
+
+Using Division Assignment Operator
+This “/=” operator is used for division where we divide the variable’s value present in the left side to the value or variable present in the right side and that result get stored in left variable itself.
+
+let x = 40;
+x /= 10.0;
+
+// Printing the result
+console.log(x); // 4
+
+Using Math.floor() for Integer Division
+In JavaScript, you might sometimes want to perform integer division where you discard the fractional part of the division result. This can be done using the Math.floor() function, which rounds down the result to the nearest integer.
+
+let a = 43;
+let b = 10;
+
+// Performing integer division
+let result = Math.floor(a / b);
+
+// For printing the result in console
+console.log("Integer division result: " + result); // 4
+
+Output
+Integer division result: 4
+
+ACTIVITY 2:-
+
+Task 5:- Using Addition Assignment (+=) Operator:- In this approach we use Addition Assignment (+=) operator in which operator Sums up left and right operand values and then assigns the result to the left operand.
+  let num1 = 15;
+  let num2 = 10;
+  // Equivalent to num1 = num1 + num2
+  num1 += num2;
+  console.log("Sum of the given number is :", num1);
+
+
+Task 6:- Using the Subtract Assignment Operator:-
+let a = 20; 
+let b = 10; 
+
+a -= b; 
+console.log(a); // 10
+
+
 
